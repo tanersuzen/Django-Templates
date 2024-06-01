@@ -17,7 +17,11 @@
     <br>
     <ul>
         {% for item in paris %}
-            <h2><li>Paris: {{item}}</li></h2>
+            {% if item < 6 %}
+                <h2><li>Paris: Too Cold</li></h2>
+            {% else %}
+                <h2><li>Paris: {{item}}</li></h2>
+            {% endif %}
         {% endfor %}
     </ul>
     <ul>

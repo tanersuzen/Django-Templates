@@ -9,9 +9,9 @@ def weather_view(request):
     weather_dictionary = {
         "istanbul" : "30",
         "amsterdam" : "20",
-        "paris" : [10,14,20,21],
+        "paris" : [5,14,20,21],
         "rome" : {"morning" : 12, "evening" : 20},
-        "user_premium" : False,
-        "test" : "Test Test test Test"
+        "user_premium" : True,
+        "test" : "Test test test Test"
         }
     return render(request, "template_app/weather.html",context=weather_dictionary)
